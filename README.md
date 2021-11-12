@@ -1,7 +1,6 @@
 ### 2021-11-12 更新
 
-亲测在 Ubuntu 20.04 和 RStudio RStudio 2021.09.0+351 "Ghost Orchid" Release (077589bcad3467ae79f318afe8641a1899a51606, 2021-09-20) for Ubuntu Bionic
-Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.8 Chrome/69.0.3497.128 Safari/537.36 中可用。
+亲测在 Ubuntu 20.04 和 RStudio RStudio 2021.09.0+351 "Ghost Orchid" Release QtWebEngine/5.12.8 中可用。
 
 不過，要把文件復制的位置改一下：
 
@@ -9,9 +8,7 @@ Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngi
 sudo mv libfcitxplatforminputcontextplugin.so.for.RStudio /usr/lib/rstudio/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
 ```
 
-避免了編譯  **Qt5** 和  **fcitx-qt5** 的問題。
-
-感謝！
+这个文件避免了編譯  **Qt5** 和  **fcitx-qt5** 的問題。
 
 ----
 
