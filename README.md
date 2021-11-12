@@ -1,3 +1,22 @@
+### 2021-11-12 更新
+
+亲测在 Ubuntu 20.04 和 RStudio RStudio 2021.09.0+351 "Ghost Orchid" Release (077589bcad3467ae79f318afe8641a1899a51606, 2021-09-20) for Ubuntu Bionic
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) QtWebEngine/5.12.8 Chrome/69.0.3497.128 Safari/537.36 中可用。
+
+不過，要把文件復制的位置改一下：
+
+```
+sudo mv libfcitxplatforminputcontextplugin.so.for.RStudio /usr/lib/rstudio/plugins/platforminputcontexts/libfcitxplatforminputcontextplugin.so
+```
+
+避免了編譯  **Qt5** 和  **fcitx-qt5** 的問題。
+
+感謝！
+
+----
+
+如果像我上面这样出现无法切换或者卡死的情况，重启电脑就好了。
+
 ### 2018-12-08 更新
 
 最新的 RStudio 版本为 1.2.1114，Qt 版本为 Qt-5.11.1。RStudio 自带的 `libQt5*` 文件保存在 `/usr/lib/rstudio/lib` 下，`2018-08-16 更新`的方法移除这些文件的办法又失效了。
